@@ -61,13 +61,13 @@ function Modal(props) {
                             </div>
                         </li>
                     </ul>
-                    <div className='w-full lg:px-16 px-3 grid grid-cols-2 lg:gap-8 gap-4'>
-                    <div className='flex flex-row font-semibold z-50 relative shades'>
-                        <div className='w-full px-2 py-4 bg-gray border-2 border-black flex justify-center items-center'>
-                            <a href="/shop" className='cursor-pointer font-presto'>View More</a>
+                    <div className='w-full lg:pr-16 lg:pl-6 px-3 grid grid-cols-1 lg:gap-8 gap-4'>
+                        <div className='w-1/2 mx-auto flex flex-row justify-center font-semibold z-50 relative shades'>
+                            <div className='w-full px-2 py-4 bg-gray border-2 border-black flex justify-center items-center'>
+                                <a href="/shop" className='cursor-pointer font-presto'>View More</a>
+                            </div>
                         </div>
-                    </div>
-                        <Add_button url={props.url} />
+                        {/* <Add_button url={props.url} /> */}
                     </div>
                 </div>
             </div>

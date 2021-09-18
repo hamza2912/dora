@@ -17,17 +17,17 @@ function Home() {
         <div className='main_body bg-home'>
           {/* landing page */}
           <div className='w-full lg:h-auto lg:pt-32 pt-32 lg:px-16 px-5 landing-page'>
-            <div className='w-full flex lg:flex-row flex-col h-full'>
+            {/* <div className='w-full flex lg:flex-row flex-col h-full'>
               <div className='lg:w-1/2 w-full hidden'>
 
               </div>
               <div className='lg:w-full w-full h-full flex justify-center items-center mt-2 lg:mt-0'>
                 <p className='lg:text-3xl text-xl text-white font-courier lg:max-w-2xl text-justify'>Moments in time met with computer error, glitched into an entirely new phenomenon — all tangible via NFT. Archive91 displays the raw truth of the dot com bubble collapse while reminding us of our human tendency to repeat the past.</p>
               </div>
-            </div>
+            </div> */}
           </div>
           {/* our collection */}
-          <div className='w-full lg:py-16 lg:px-32 px-5 py-5 mt-12'>
+          <div className='w-full lg:py-8 lg:px-32 px-5 py-5 mt-6'>
             <Available_artworks />
           </div>
           {/* read more */}

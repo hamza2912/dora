@@ -51,7 +51,7 @@ function About() {
                 <p className='text-base font-courier mt-2'>Early that morning,  Bakkom arrived on the 91st floor and noticed the door to their lone remaining neighbour ajar. He stepped in, only to be met by a middle-aged man in formal business attire with heavy bags shadowing his eyes.</p>
               </div>
               <div className='mt-5'>
-                <p className='text-base font-courier mt-2'>He introduced himself as an office manager at Smart World Technologies --  He had been coming into work for months now without pay</p>
+                <p className='text-base font-courier mt-2'>He introduced himself as an office manager at Smart World Technologies --  He had been coming into work for months now without pay.</p>
               </div>
               <div className='mt-5'>
                 <p className='text-base font-courier mt-2'>Smart World Technologies, like many companies at the burst of the <a className='text-blue-400' href="https://searchcio.techtarget.com/definition/dot-com-bubble#_msocom_1" rel="noreferrer" target="_blank">dot-com bubble</a>, was sinking deep into bankruptcy.</p>
@@ -62,7 +62,7 @@ function About() {
             </div>
           </div>
           <div className='w-full lg:px-32 px-5 lg:py-16 py-8 font-presto italic lg:text-3xl text-2xl text-center'>
-            <h2 className='text-white font-presto italic'>Matthew Bakkom Quote</h2>
+            {/* <h2 className='text-white font-presto italic'>Matthew Bakkom Quote</h2> */}
             <h2 className='text-black font-presto italic'>"The sight of the space, the remnants, and of what had once been a “promising provider of branded internet portals” during the peak of the dot-com Bubble, immediately struck me as something worthy of documentation; an exposé of the hidden failures obscured by the hype of the market, ridden with comic energy of mercantile hubris and in this case, all beneath the facade of one of Global Capitalism’s most revered icons" - M. Bakkom 2021</h2>
           </div>
           <div className='grid lg:grid-cols-2 grid-cols-1 gap-8 lg:mt-12 mt-6 items-center'>
