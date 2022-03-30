@@ -7,118 +7,19 @@
     <meta name="theme-color" content="#000000" />
     <meta
       name="description"
-      content="Web site created using create-react-app"
+      content="Dora"
     />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
-    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&amp;display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css" integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ==" crossorigin="anonymous" referrerpolicy="no-referrer">
-    
-    <title>Archive 91</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <title>Dora</title>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
-    
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js" integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script>
-      function dragElement(elmnt) {
-        var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-        if (document.getElementById(elmnt.id + "header")) {
-          // if present, the header is where you move the DIV from:
-          document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-        } else {
-          // otherwise, move the DIV from anywhere inside the DIV:
-          elmnt.onmousedown = dragMouseDown;
-        }
 
-        function dragMouseDown(e) {
-          e = e || window.event;
-          e.preventDefault();
-          // get the mouse cursor position at startup:
-          pos3 = e.clientX;
-          pos4 = e.clientY;
-          document.onmouseup = closeDragElement;
-          // call a function whenever the cursor moves:
-          document.onmousemove = elementDrag;
-        }
-
-        function elementDrag(e) {
-          e = e || window.event;
-          e.preventDefault();
-          // calculate the new cursor position:
-          pos1 = pos3 - e.clientX;
-          pos2 = pos4 - e.clientY;
-          pos3 = e.clientX;
-          pos4 = e.clientY;
-          // set the element's new position:
-          elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-          elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-        }
-
-        function closeDragElement() {
-          // stop moving when mouse button is released:
-          document.onmouseup = null;
-          document.onmousemove = null;
-        }
-      }
-    </script>
-    <script>
-      $(document).ready((function(){
-        console.log("here")
-        var i="";
-        $(".minimize-div").click((function(){
-          i=$("#mydiv").detach();
-          $("#drag-w").show();
-        }));
-        $(".close-div").click((function(){
-          $("#mydiv").remove();
-        }));
-        $("#drag-w").click((function(){
-          $(".main_body").append(i);
-          $(this).hide();
-        }));
-        $("#submit-popup").click((function(){
-          $(this).hide();
-          $("#input-details").hide();
-          $("#recieved").fadeIn();
-        }));
-        $(".artwork1").click((function(){
-          $("#work1").modal().modal("show");
-        }))
-        $(".artwork3").click((function(){
-          $("#work3").modal().modal("show");
-        }));
-        $(".artwork2").click((function(){
-          $("#work2").modal().modal("show");
-        }));
-        $(".artwork4").click((function(){
-          $("#work4").modal().modal("show");
-        }));
-        $(".artwork5").click((function(){
-          $("#work5").modal().modal("show");
-        }));
-        $(".close-modal").click((function(){
-          $(".ui.modal").modal("hide");
-          $(".main_body").append(i);
-        }));
-        // var message = "";
-        // $("#submit-popup").on("click", function() {
-        //     message = $("#input-details").serialize();
-        //     $.ajax({
-        //         url: "//formspree.io/f/xqkwggyv", 
-        //         method: "POST",
-        //         data: {message: message},
-        //         dataType: "json"
-        //     });
-        //     return false;
-        // });
-        dragElement(document.getElementById("mydiv"));
-      }));
-    </script>
   </body>
 </html>

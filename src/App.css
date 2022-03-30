@@ -7,25 +7,6 @@
   font-display: swap;
 }
 
-@font-face {
-  font-family: 'Presto';
-  src: url('fonts/PrestoMedium.woff2') format('woff2'),
-      url('fonts/PrestoMedium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: 'Sarina';
-  src: url('fonts/Sarina-Regular.woff2') format('woff2'),
-      url('fonts/Sarina-Regular.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
-  font-display: swap;
-}
-
-
 .App {
   text-align: center;
 }
