@@ -1,5 +1,7 @@
 {
   "projects": {
-    "default": "archive91-neil"
-  }
+    "default": "trydora",
+    "staging": "trydora"
+  },
+  "targets": {}
 }

@@ -24,7 +24,8 @@ function Services() {
 
     return (
       
-      <div className='w-full lg:h-screen h-auto bg-mate lg:px-32 px-5 lg:py-24 py-12'>
+      <div className='w-full lg:h-screen h-auto bg-mate lg:py-24 py-12'>
+          <div className='container mx-auto lg:px-32 px-5'>
           <h1 data-aos="fade-right" className='text-white lg:text-3xl text-xl tracking-wider'>How do you build <br /> trust with Dora?</h1>
           <div className='grid lg:grid-cols-2 grid-cols-1 mt-12'>
             <div className='flex flex-col w-3/4'>
@@ -76,6 +77,7 @@ function Services() {
                     <img className='w-full h-auto fadein' src="images/vectors/transparency_img.svg" alt="Service Image" /> : null
                 }
             </div>
+          </div>
           </div>
       </div>
 
