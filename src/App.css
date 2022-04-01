@@ -99,12 +99,20 @@ h1{
   background-color: #302B2E;
 }
 
+.text-mate{
+  color: rgba(0, 0, 0, 0.8);
+}
+
 .tracking-widestt {
   letter-spacing: 0.2em;
 }
 
 .fadein {
   animation: fadein 0.3s linear;
+}
+
+.z-minus{
+  z-index: -1;
 }
 
 .dimmer
@@ -124,6 +132,36 @@ h1{
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+}
+
+.h-arc{
+  height: calc(100% - 100px);
+}
+
+.h-arc2{
+  height: calc(100% - 100px);
+}
+
+@media only screen and (max-width:786px) {
+  .h-arc{
+    height: 75%;
+  }
+
+  .h-arc2{
+    height: 80%;
+  }
+}
+
+@media only screen and (max-width:380px) {
+  .h-arc2{
+    height: 75%;
+  }
+}
+
+@media only screen and (min-width:767px) and (max-width:990px) {
+  .h-arc{
+    height: 110%;
+  }
 }
 
 @keyframes fadein {
