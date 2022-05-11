@@ -1,6 +1,8 @@
 import './App.css';
+import './firebase';
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./pages/home";
+import Emaillist from './pages/emaillist';
 
 function App() {
   return (
@@ -8,7 +10,8 @@ function App() {
 
     <Switch>
 
-      <Route path="/" component={Home} />
+      <Route exact path="/" component={Home} />
+      <Route path="/emaillist" component={Emaillist} />
 
     </Switch>
 

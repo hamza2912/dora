@@ -44,14 +44,44 @@
 p{
   font-family: 'Nunito Sans', sans-serif;
   color: #000;
+  line-height: 150% !important;
 }
 
 h1{
   font-family: 'IBM Plex Mono', monospace;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+h2{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 48px;
+  line-height: 150%;
+}
+
+h3{
+  font-family: 'Nunito Sans', sans-serif;
+  color: #000;
+  line-height: 150%;
+  font-size: 24px;
+}
+
+.w-hero{
+  width: 810px;
+}
+
+.w-content{
+  width: 330px;
 }
 
 .hero-text{
   background-image: linear-gradient(to right, #61E2A4, #43A2B3);
+}
+
+.text-agent{
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 25px;
+  line-height: 130%;
 }
 
 .bg-blue{
@@ -142,26 +172,30 @@ h1{
   height: calc(100% - 100px);
 }
 
+.h-fit{
+  height: fit-content;
+}
+
 @media only screen and (max-width:786px) {
-  .h-arc{
-    height: 75%;
+  h1{
+    font-size: 30px;
+    line-height: 150%;
+  }
+  
+  h2{
+    font-size: 20px;
+  }
+  
+  h3{
+    font-size: 16px;
+  }
+  .text-agent{
+    font-size: 17px;
+  }
+  .w-content{
+    width: 100%;
   }
 
-  .h-arc2{
-    height: 80%;
-  }
-}
-
-@media only screen and (max-width:380px) {
-  .h-arc2{
-    height: 75%;
-  }
-}
-
-@media only screen and (min-width:767px) and (max-width:990px) {
-  .h-arc{
-    height: 110%;
-  }
 }
 
 @keyframes fadein {
